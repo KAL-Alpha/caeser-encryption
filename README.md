@@ -1,5 +1,5 @@
 ## Hi there 👋
-
+本代码仅用于学习目的，请勿用于非法用途
 <!--
 **KAL-Alpha/kal-alpha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
