@@ -1,5 +1,6 @@
 ## Hi there 👋
 本代码仅用于学习目的，请勿用于非法用途
+一个简单的凯撒加密程序，具有简单的TUI功能
 <!--
 **KAL-Alpha/kal-alpha** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
