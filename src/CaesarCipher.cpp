@@ -96,9 +96,16 @@ std::string CaesarCipher::decryptFile(const std::string& filename) const {
 
 // 从文件读取文本
 std::string CaesarCipher::readFromFile(const std::string& filename) {
-    std::ifstream file("output/" + filename);
+    // 首先尝试在output目录下查找文件
+    std::string outputPath = "output/" + filename;
+    std::ifstream file(outputPath);
+    
+    // 如果在output目录下找不到，再尝试直接打开文件（可能是绝对路径或相对路径）
     if (!file.is_open()) {
-        throw std::runtime_error("无法打开文件: " + filename);
+        file.open(filename);
+        if (!file.is_open()) {
+            throw std::runtime_error("无法打开文件: " + filename + " (在output目录和当前目录均未找到)");
+        }
     }
     
     std::string content;
